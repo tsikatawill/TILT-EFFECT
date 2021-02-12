@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>3d Tilt Effect</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>3d Tilt Effect</h1>
+        </header>
+        <main>
+            <div class="container">
+                <div class="card card1">
+                    <p class="card-number">01</p>
+                    <h3 class="card-title">Jordans</h3>
+                    <div class="img-wrapper">
+                        <img src="./img/Shoe1.png" alt="">
+                    </div>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="card card2">
+                    <p class="card-number">02</p>
+                    <h3 class="card-title">Jordans</h3>
+                    <div class="img-wrapper">
+                        <img src="./img/slips1.png" alt="">
+                    </div>
+                    <button class="buy">Buy now</button>
+                </div>
+                <div class="card card3">
+                    <p class="card-number">03</p>
+                    <h3 class="card-title">Nike</h3>
+                    <div class="img-wrapper">
+                        <img src="./img/Shoe.png" alt="">
+                    </div>
+                    <button class="buy">Buy now</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5
+        });
+    </script>
+</body>
+
+</html>
